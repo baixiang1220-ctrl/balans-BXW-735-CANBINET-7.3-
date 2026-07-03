@@ -1,0 +1,25 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="theme-color" content="#ffffff" />
+    <title>Smart Humidor Cabinet</title>
+    <link rel="stylesheet" href="./css/style.css" />
+  </head>
+  <body>
+    <main class="viewer-shell" aria-label="Smart Humidor Cabinet 3D product viewer">
+      <canvas id="product-canvas"></canvas>
+      <div class="status" id="status" role="status" aria-live="polite">Loading model</div>
+    </main>
+    <script type="importmap">
+      {
+        "imports": {
+          "three": "./vendor/three-slim/build/three.module.js",
+          "three/addons/": "./vendor/three-slim/examples/jsm/"
+        }
+      }
+    </script>
+    <script type="module" src="./js/main.js"></script>
+  </body>
+</html>
